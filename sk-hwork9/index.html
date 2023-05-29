@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>sk-hwork9</title>
+  </head>
+  <body>
+    <!-- Open modal with black bg -->
+    <div class="container">
+      <div class="modalWrapper">
+        <button id="modalBtn">Open modal</button>
+        <div id="modal">
+          <div class="modalText">
+            <h3>This is a glassmorphism modal</h3>
+            <p>Click anywhere to close</p>
+          </div>
+        </div>
+      </div>
+      <div class="modalBgOverlay"></div>
+
+      <!-- Change body's background-->
+      <div class="colorWrapper">
+        <form class="colorForm">
+          <input type="text" id="colorInp" placeholder="Write a Color..." />
+          <button type="submit" id="changeBtn">Change body background</button>
+        </form>
+      </div>
+
+      <!-- Average of nums -->
+      <div class="averageWrapper">
+        <form class="averageForm">
+          <input
+            type="text"
+            id="averageInp"
+            placeholder="Write... (eg: 1:2:3:4:5)"
+            required
+          />
+          <button type="submit" id="averageBtn">Calculate average</button>
+          <h3 id="averageResult"></h3>
+        </form>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
